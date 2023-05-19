@@ -17,9 +17,7 @@ class HomePage extends StatelessWidget {
       body: BlocBuilder<WeightHeightCubit, WeightHeightState>(
         builder: (context, state) {
           if (state is WeightHeightInitial) {
-            return const Center(
-              child: Text('Sem dados de IMC para exibir'),
-            );
+            return const Center(child: Text('Sem dados de IMC para exibir'));
           }
           if (state is WeightHeightLoaded) {
             return ListView.builder(

@@ -1,4 +1,4 @@
-import 'weight_height.dart';
+import 'weight_height_model.dart';
 
 abstract class WeightHeightState {}
 
@@ -7,7 +7,7 @@ class WeightHeightInitial extends WeightHeightState {
 }
 
 class WeightHeightLoaded extends WeightHeightState {
-  final List<WeightHeight> weightHeights;
+  final List<WeightHeightModel> weightHeights;
 
   WeightHeightLoaded(this.weightHeights);
 }
